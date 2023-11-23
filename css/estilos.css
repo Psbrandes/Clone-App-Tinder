@@ -23,11 +23,18 @@ body {
 
 .navbar i {
     font-size: 1.5rem;
-    color: #dadfe6;  
+    color: #dadfe6;
+    transition: 500ms ease;  
+}
+
+.navbar i:hover{
+    cursor: pointer;
+    transform: scale(1.12);
+    color:#FE466D;
 }
 
 .navbar i:nth-child(1) {
-    color: #FE466D;
+    /* color: #FE466D; */
 }
 
 /* PHOTO AND ACTIONS */
@@ -74,6 +81,7 @@ body {
     align-items: center;
     margin-bottom: 6px;
     font-size: 1.4rem;
+    color: lightgrey;
 }
 
 .photo-name-and-age h2:nth-child(2) {
@@ -106,6 +114,12 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: transform 500ms ease;
+}
+
+.action:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .actions .action:nth-child(1) {
@@ -122,4 +136,17 @@ body {
 
 .actions .action:nth-child(3) {
     color: #1be4a1;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 1025px) {
+    .photo {
+        width: 367px;
+        height: 684px;
+    }
+
+    .navbar {
+        width: 400px;
+        margin: auto;
+    }
 }
